@@ -15,8 +15,29 @@
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const element = <h1>React independet study</h1>;
-
-root.render(element);
 
 
+
+// Level Oun
+// const element = <h1>React independet study</h1>;   
+// root.render(element);
+
+//Level Two
+function tick() {
+  const element = (
+    <div>
+          
+      <h1>React independet study</h1>
+
+      <h2>Зараз {new Date().toLocaleTimeString()}</h2>
+      
+
+      <h3>OK ?</h3>
+      
+          
+    </div>
+  );
+  root.render(element);
+}
+
+setInterval(tick, 1000);
